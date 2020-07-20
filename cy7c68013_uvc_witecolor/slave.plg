@@ -1,0 +1,136 @@
+<html>
+<body>
+<pre>
+<h1>µVision3 Build Log</h1>
+<h2>Project:</h2>
+C:\Users\Administrator.PC-20200508TVIC\Desktop\FX2LP Crosslink FPGA Source Code\FX2LP Source Code _copy\slave.uv2
+Project File Date:  07/09/2020
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling DSCR.A51...
+compiling slave.c...
+SLAVE.C(235): error C100: unprintable character 0xA1 skipped
+SLAVE.C(235): error C100: unprintable character 0xA2 skipped
+Target not created
+Build target 'Target 1'
+compiling slave.c...
+SLAVE.C(235): error C100: unprintable character 0xA1 skipped
+SLAVE.C(235): error C100: unprintable character 0xA2 skipped
+Target not created
+compiling slave.c...
+SLAVE.C(235): error C100: unprintable character 0xA1 skipped
+SLAVE.C(235): error C100: unprintable character 0xA2 skipped
+slave.c - 2 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling slave.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LED_OFF?SLAVE
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LED_ON?SLAVE
+Program Size: data=66.7 xdata=4520 code=3402
+creating hex file from "slave"...
+User command #2: C:\Cypress\USB\CY3684_EZ-USB_FX2LP_DVK\1.1\Bin\Hex2bix -i -f 0xC2 slave.iic slave.hex
+Intel Hex file to EZ-USB Binary file conversion utility
+Copyright (c) 2012-2013, Cypress Semiconductor Inc.
+3447 Bytes written.
+Total Code Bytes = 3402
+Conversion completed successfully.
+"slave" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling slave.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LED_OFF?SLAVE
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LED_ON?SLAVE
+Program Size: data=66.7 xdata=4520 code=3395
+creating hex file from "slave"...
+User command #2: C:\Cypress\USB\CY3684_EZ-USB_FX2LP_DVK\1.1\Bin\Hex2bix -i -f 0xC2 slave.iic slave.hex
+Intel Hex file to EZ-USB Binary file conversion utility
+Copyright (c) 2012-2013, Cypress Semiconductor Inc.
+3440 Bytes written.
+Total Code Bytes = 3395
+Conversion completed successfully.
+"slave" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling slave.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LED_OFF?SLAVE
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LED_ON?SLAVE
+Program Size: data=66.7 xdata=4520 code=3450
+creating hex file from "slave"...
+User command #2: C:\Cypress\USB\CY3684_EZ-USB_FX2LP_DVK\1.1\Bin\Hex2bix -i -f 0xC2 slave.iic slave.hex
+Intel Hex file to EZ-USB Binary file conversion utility
+Copyright (c) 2012-2013, Cypress Semiconductor Inc.
+3495 Bytes written.
+Total Code Bytes = 3450
+Conversion completed successfully.
+"slave" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling slave.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LED_OFF?SLAVE
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LED_ON?SLAVE
+Program Size: data=66.7 xdata=4520 code=3565
+creating hex file from "slave"...
+User command #2: C:\Cypress\USB\CY3684_EZ-USB_FX2LP_DVK\1.1\Bin\Hex2bix -i -f 0xC2 slave.iic slave.hex
+Intel Hex file to EZ-USB Binary file conversion utility
+Copyright (c) 2012-2013, Cypress Semiconductor Inc.
+3614 Bytes written.
+Total Code Bytes = 3565
+Conversion completed successfully.
+"slave" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+assembling DSCR.A51...
+compiling slave.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LED_OFF?SLAVE
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LED_ON?SLAVE
+Program Size: data=66.7 xdata=4520 code=3393
+creating hex file from "slave"...
+User command #2: C:\Cypress\USB\CY3684_EZ-USB_FX2LP_DVK\1.1\Bin\Hex2bix -i -f 0xC2 slave.iic slave.hex
+Intel Hex file to EZ-USB Binary file conversion utility
+Copyright (c) 2012-2013, Cypress Semiconductor Inc.
+3438 Bytes written.
+Total Code Bytes = 3393
+Conversion completed successfully.
+"slave" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling slave.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LED_OFF?SLAVE
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LED_ON?SLAVE
+Program Size: data=66.7 xdata=4520 code=3395
+creating hex file from "slave"...
+User command #2: C:\Cypress\USB\CY3684_EZ-USB_FX2LP_DVK\1.1\Bin\Hex2bix -i -f 0xC2 slave.iic slave.hex
+Intel Hex file to EZ-USB Binary file conversion utility
+Copyright (c) 2012-2013, Cypress Semiconductor Inc.
+3440 Bytes written.
+Total Code Bytes = 3395
+Conversion completed successfully.
+"slave" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LED_OFF?SLAVE
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LED_ON?SLAVE
+Program Size: data=66.7 xdata=4520 code=3395
+creating hex file from "slave"...
+User command #2: C:\Cypress\USB\CY3684_EZ-USB_FX2LP_DVK\1.1\Bin\Hex2bix -i -f 0xC2 slave.iic slave.hex
+Intel Hex file to EZ-USB Binary file conversion utility
+Copyright (c) 2012-2013, Cypress Semiconductor Inc.
+3440 Bytes written.
+Total Code Bytes = 3395
+Conversion completed successfully.
+"slave" - 0 Error(s), 2 Warning(s).
