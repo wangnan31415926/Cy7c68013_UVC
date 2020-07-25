@@ -1,4 +1,4 @@
-A51 MACRO ASSEMBLER  DSCR                                                                 07/17/2020 10:00:18 PAGE     1
+A51 MACRO ASSEMBLER  DSCR                                                                 07/25/2020 11:39:39 PAGE     1
 
 
 MACRO ASSEMBLER A51 V8.00d
@@ -65,7 +65,7 @@ LOC  OBJ            LINE     SOURCE
                       55     ;;-----------------------------------------------------------------------------
                       56     ;; Global Variables
                       57     ;;-----------------------------------------------------------------------------
-A51 MACRO ASSEMBLER  DSCR                                                                 07/17/2020 10:00:18 PAGE     2
+A51 MACRO ASSEMBLER  DSCR                                                                 07/25/2020 11:39:39 PAGE     2
 
                       58     
                       59     ;; TGE      rseg DSCR                 ;; locate the descriptor table in on-part memory.
@@ -133,7 +133,7 @@ LOC  OBJ            LINE     SOURCE
                      121     ;; Class specific VC Interface Header Descriptor */
 0136 0D              122           db   0DH                  ;; Descriptor size 
 0137 24              123           db   24H                  ;; Class Specific I/f Header Descriptor type */
-A51 MACRO ASSEMBLER  DSCR                                                                 07/17/2020 10:00:18 PAGE     3
+A51 MACRO ASSEMBLER  DSCR                                                                 07/25/2020 11:39:39 PAGE     3
 
 0138 01              124           db   01H                  ;; Descriptor Sub type : VC_HEADER */
 0139 1001            125           dw   1001H               ;; Revision of class spec : 1.1 */
@@ -201,7 +201,7 @@ LOC  OBJ            LINE     SOURCE
 017A 00              179          db 00H                     ;;
 017B 00              180          db 00H                     ;;
 017C 00              181          db 00H                     ;;  /* No controls supported */
-A51 MACRO ASSEMBLER  DSCR                                                                 07/17/2020 10:00:18 PAGE     4
+A51 MACRO ASSEMBLER  DSCR                                                                 07/25/2020 11:39:39 PAGE     4
 
 017D 00              182          db 00H                     ;;      /* String desc index : Not used */
                      183     
@@ -269,7 +269,7 @@ LOC  OBJ            LINE     SOURCE
 01AF 5955            241          dw     5955H;4e56H;5955H   
 01B1 5932            242          dw     5932H ;3132H;5932H      ;;    /* GUID used to identify streaming-encoding forma
                              t: YUY2  */
-A51 MACRO ASSEMBLER  DSCR                                                                 07/17/2020 10:00:18 PAGE     5
+A51 MACRO ASSEMBLER  DSCR                                                                 07/25/2020 11:39:39 PAGE     5
 
 01B3 0000            243          dw     0000H
 01B5 1000            244          dw     1000H      ;;
@@ -337,7 +337,7 @@ LOC  OBJ            LINE     SOURCE
 01EC 12              295           db   (FullSpeedConfigDscrEnd-FullSpeedConfigDscr) mod 256 ;; Total Length (LSB)
 01ED 00              296           db   (FullSpeedConfigDscrEnd-FullSpeedConfigDscr)  /  256 ;; Total Length (MSB)
 01EE 01              297           db   1                    ;; Number of interfaces
-A51 MACRO ASSEMBLER  DSCR                                                                 07/17/2020 10:00:18 PAGE     6
+A51 MACRO ASSEMBLER  DSCR                                                                 07/25/2020 11:39:39 PAGE     6
 
 01EF 01              298           db   1                    ;; Configuration number
 01F0 00              299           db   0                    ;; Configuration string
@@ -405,7 +405,7 @@ LOC  OBJ            LINE     SOURCE
 0242 4900            361           db   'I',00
 0244 4600            362           db   'F',00
 0246 4F00            363           db   'O',00
-A51 MACRO ASSEMBLER  DSCR                                                                 07/17/2020 10:00:18 PAGE     7
+A51 MACRO ASSEMBLER  DSCR                                                                 07/25/2020 11:39:39 PAGE     7
 
 0248 2000            364           db   ' ',00
 024A 4500            365           db   'E',00
@@ -447,7 +447,7 @@ LOC  OBJ            LINE     SOURCE
 028C 0000            401           dw   0000H
                      402           end
                                    
-A51 MACRO ASSEMBLER  DSCR                                                                 07/17/2020 10:00:18 PAGE     8
+A51 MACRO ASSEMBLER  DSCR                                                                 07/25/2020 11:39:39 PAGE     8
 
 SYMBOL TABLE LISTING
 ------ ----- -------
