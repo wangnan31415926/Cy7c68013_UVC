@@ -247,12 +247,14 @@ EP2FIFOBUF[0]=0x0c;//	0c 8d 9c e1  85 20 64 99  ac 20 03 06
 //	EP2FIFOBUF[12]++;
 //}
    SYNCDELAY;
-for(i=6;i<512/2;i++)
+for(i=3;i<512/4;i++)
 {
 // if(EP2FIFOBUF[i]>100){EP2FIFOBUF[i]=EP2FIFOBUF[i]%128;}	
 // if(EP2FIFOBUF[i]<20){EP2FIFOBUF[i]=EP2FIFOBUF[i]+20;}
-  EP2FIFOBUF[2*i]=0xf4;
-  EP2FIFOBUF[2*i+1]=0x80;
+  EP2FIFOBUF[4*i]=0x3e;	  //BT709 
+  EP2FIFOBUF[4*i+1]=0x66;
+    EP2FIFOBUF[4*i+2]=0x3e;
+  EP2FIFOBUF[4*i+3]=0xef;
 
  // EP2FIFOBUF[3*i+2]=0x80;
 }

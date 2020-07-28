@@ -1,4 +1,4 @@
-BL51 BANKED LINKER/LOCATER V6.05                                                        07/25/2020  11:40:24  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.05                                                        07/28/2020  10:41:13  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.05, INVOKED BY:
@@ -59,7 +59,7 @@ LINK MAP OF MODULE:  slave (FW)
             XDATA   9100H     0001H     ABSOLUTE     
                     9101H     0EFFH                  *** GAP ***
             XDATA   A000H     0001H     ABSOLUTE     
-BL51 BANKED LINKER/LOCATER V6.05                                                      07/25/2020  11:40:24  PAGE 2
+BL51 BANKED LINKER/LOCATER V6.05                                                      07/28/2020  10:41:13  PAGE 2
 
 
                     A001H     00FFH                  *** GAP ***
@@ -119,7 +119,7 @@ LINK MAP OF MODULE:  slave (FW)
             XDATA   E62FH     0001H     ABSOLUTE     
             XDATA   E630H     0001H     ABSOLUTE     
             XDATA   E631H     0001H     ABSOLUTE     
-BL51 BANKED LINKER/LOCATER V6.05                                                      07/25/2020  11:40:24  PAGE 3
+BL51 BANKED LINKER/LOCATER V6.05                                                      07/28/2020  10:41:13  PAGE 3
 
 
             XDATA   E632H     0001H     ABSOLUTE     
@@ -179,7 +179,7 @@ LINK MAP OF MODULE:  slave (FW)
             XDATA   E681H     0001H     ABSOLUTE     
             XDATA   E682H     0001H     ABSOLUTE     
             XDATA   E683H     0001H     ABSOLUTE     
-BL51 BANKED LINKER/LOCATER V6.05                                                      07/25/2020  11:40:24  PAGE 4
+BL51 BANKED LINKER/LOCATER V6.05                                                      07/28/2020  10:41:13  PAGE 4
 
 
             XDATA   E684H     0001H     ABSOLUTE     
@@ -239,7 +239,7 @@ LINK MAP OF MODULE:  slave (FW)
             XDATA   E6C7H     0001H     ABSOLUTE     
             XDATA   E6C8H     0001H     ABSOLUTE     
             XDATA   E6C9H     0001H     ABSOLUTE     
-BL51 BANKED LINKER/LOCATER V6.05                                                      07/25/2020  11:40:24  PAGE 5
+BL51 BANKED LINKER/LOCATER V6.05                                                      07/28/2020  10:41:13  PAGE 5
 
 
             XDATA   E6CAH     0001H     ABSOLUTE     
@@ -299,16 +299,16 @@ LINK MAP OF MODULE:  slave (FW)
                     0046H     000DH                  *** GAP ***
             CODE    0053H     0003H     ABSOLUTE     
                     0056H     00AAH                  *** GAP ***
-BL51 BANKED LINKER/LOCATER V6.05                                                      07/25/2020  11:40:24  PAGE 6
+BL51 BANKED LINKER/LOCATER V6.05                                                      07/28/2020  10:41:13  PAGE 6
 
 
             CODE    0100H     018EH     ABSOLUTE     
                     028EH     0072H                  *** GAP ***
             CODE    0300H     02F2H     UNIT         ?PR?SETUPCOMMAND?FW
             CODE    05F2H     01E2H     UNIT         ?PR?MAIN?FW
-            CODE    07D4H     010AH     UNIT         ?PR?TD_POLL?SLAVE
-            CODE    08DEH     0018H     UNIT         ?PR?ISR_SUDAV?SLAVE
-            CODE    08F6H     000AH     UNIT         ?CO?FW
+            CODE    07D4H     0126H     UNIT         ?PR?TD_POLL?SLAVE
+            CODE    08FAH     0004H     UNIT         ?PR?RESUME_ISR?FW
+            CODE    08FEH     0002H     UNIT         ?PR?TD_SUSPEND?SLAVE
             CODE    0900H     00B8H     PAGE         ?PR?USB_JUMP_TABLE?USBJT
             CODE    09B8H     00A1H     UNIT         ?PR?TD_INIT?SLAVE
             CODE    0A59H     008CH     UNIT         ?C_C51STARTUP
@@ -326,58 +326,58 @@ LINK MAP OF MODULE:  slave (FW)
             CODE    0DA5H     002BH     UNIT         ?PR?_EZUSB_GETSTRINGDSCR?GET_STRD
             CODE    0DD0H     0025H     UNIT         EZUSB
             CODE    0DF5H     0024H     UNIT         ?C?LIB_CODE
-            CODE    0E19H     0018H     UNIT         ?PR?ISR_SUSP?SLAVE
-            CODE    0E31H     0016H     UNIT         ?PR?ISR_SUTOK?SLAVE
-            CODE    0E47H     0012H     UNIT         ?PR?DR_GETCONFIGURATION?SLAVE
-            CODE    0E59H     0012H     UNIT         ?PR?DR_GETINTERFACE?SLAVE
-            CODE    0E6BH     0008H     UNIT         ?PR?DR_SETINTERFACE?SLAVE
-            CODE    0E73H     0004H     UNIT         ?PR?RESUME_ISR?FW
-            CODE    0E77H     0002H     UNIT         ?PR?TD_SUSPEND?SLAVE
-            CODE    0E79H     0002H     UNIT         ?PR?TD_RESUME?SLAVE
-            CODE    0E7BH     0002H     UNIT         ?PR?DR_GETDESCRIPTOR?SLAVE
-            CODE    0E7DH     0002H     UNIT         ?PR?DR_GETSTATUS?SLAVE
-            CODE    0E7FH     0002H     UNIT         ?PR?DR_CLEARFEATURE?SLAVE
-            CODE    0E81H     0002H     UNIT         ?PR?DR_SETFEATURE?SLAVE
-            CODE    0E83H     0002H     UNIT         ?PR?DR_VENDORCMND?SLAVE
-            CODE    0E85H     0001H     UNIT         ?PR?ISR_EP0ACK?SLAVE
-            CODE    0E86H     0001H     UNIT         ?PR?ISR_STUB?SLAVE
-            CODE    0E87H     0001H     UNIT         ?PR?ISR_EP0IN?SLAVE
-            CODE    0E88H     0001H     UNIT         ?PR?ISR_EP0OUT?SLAVE
-            CODE    0E89H     0001H     UNIT         ?PR?ISR_EP1IN?SLAVE
-            CODE    0E8AH     0001H     UNIT         ?PR?ISR_EP1OUT?SLAVE
-            CODE    0E8BH     0001H     UNIT         ?PR?ISR_EP2INOUT?SLAVE
-            CODE    0E8CH     0001H     UNIT         ?PR?ISR_EP4INOUT?SLAVE
-            CODE    0E8DH     0001H     UNIT         ?PR?ISR_EP6INOUT?SLAVE
-            CODE    0E8EH     0001H     UNIT         ?PR?ISR_EP8INOUT?SLAVE
-            CODE    0E8FH     0001H     UNIT         ?PR?ISR_IBN?SLAVE
-            CODE    0E90H     0001H     UNIT         ?PR?ISR_EP0PINGNAK?SLAVE
-            CODE    0E91H     0001H     UNIT         ?PR?ISR_EP1PINGNAK?SLAVE
-            CODE    0E92H     0001H     UNIT         ?PR?ISR_EP2PINGNAK?SLAVE
-            CODE    0E93H     0001H     UNIT         ?PR?ISR_EP4PINGNAK?SLAVE
-            CODE    0E94H     0001H     UNIT         ?PR?ISR_EP6PINGNAK?SLAVE
-            CODE    0E95H     0001H     UNIT         ?PR?ISR_EP8PINGNAK?SLAVE
-            CODE    0E96H     0001H     UNIT         ?PR?ISR_ERRORLIMIT?SLAVE
-            CODE    0E97H     0001H     UNIT         ?PR?ISR_EP2PIDERROR?SLAVE
-            CODE    0E98H     0001H     UNIT         ?PR?ISR_EP4PIDERROR?SLAVE
-BL51 BANKED LINKER/LOCATER V6.05                                                      07/25/2020  11:40:24  PAGE 7
+            CODE    0E19H     0018H     UNIT         ?PR?ISR_SUDAV?SLAVE
+            CODE    0E31H     0018H     UNIT         ?PR?ISR_SUSP?SLAVE
+            CODE    0E49H     0016H     UNIT         ?PR?ISR_SUTOK?SLAVE
+            CODE    0E5FH     0012H     UNIT         ?PR?DR_GETCONFIGURATION?SLAVE
+            CODE    0E71H     0012H     UNIT         ?PR?DR_GETINTERFACE?SLAVE
+            CODE    0E83H     000AH     UNIT         ?CO?FW
+            CODE    0E8DH     0008H     UNIT         ?PR?DR_SETINTERFACE?SLAVE
+            CODE    0E95H     0002H     UNIT         ?PR?TD_RESUME?SLAVE
+            CODE    0E97H     0002H     UNIT         ?PR?DR_GETDESCRIPTOR?SLAVE
+            CODE    0E99H     0002H     UNIT         ?PR?DR_GETSTATUS?SLAVE
+            CODE    0E9BH     0002H     UNIT         ?PR?DR_CLEARFEATURE?SLAVE
+            CODE    0E9DH     0002H     UNIT         ?PR?DR_SETFEATURE?SLAVE
+            CODE    0E9FH     0002H     UNIT         ?PR?DR_VENDORCMND?SLAVE
+            CODE    0EA1H     0001H     UNIT         ?PR?ISR_EP0ACK?SLAVE
+            CODE    0EA2H     0001H     UNIT         ?PR?ISR_STUB?SLAVE
+            CODE    0EA3H     0001H     UNIT         ?PR?ISR_EP0IN?SLAVE
+            CODE    0EA4H     0001H     UNIT         ?PR?ISR_EP0OUT?SLAVE
+            CODE    0EA5H     0001H     UNIT         ?PR?ISR_EP1IN?SLAVE
+            CODE    0EA6H     0001H     UNIT         ?PR?ISR_EP1OUT?SLAVE
+            CODE    0EA7H     0001H     UNIT         ?PR?ISR_EP2INOUT?SLAVE
+            CODE    0EA8H     0001H     UNIT         ?PR?ISR_EP4INOUT?SLAVE
+            CODE    0EA9H     0001H     UNIT         ?PR?ISR_EP6INOUT?SLAVE
+            CODE    0EAAH     0001H     UNIT         ?PR?ISR_EP8INOUT?SLAVE
+            CODE    0EABH     0001H     UNIT         ?PR?ISR_IBN?SLAVE
+            CODE    0EACH     0001H     UNIT         ?PR?ISR_EP0PINGNAK?SLAVE
+            CODE    0EADH     0001H     UNIT         ?PR?ISR_EP1PINGNAK?SLAVE
+            CODE    0EAEH     0001H     UNIT         ?PR?ISR_EP2PINGNAK?SLAVE
+            CODE    0EAFH     0001H     UNIT         ?PR?ISR_EP4PINGNAK?SLAVE
+            CODE    0EB0H     0001H     UNIT         ?PR?ISR_EP6PINGNAK?SLAVE
+            CODE    0EB1H     0001H     UNIT         ?PR?ISR_EP8PINGNAK?SLAVE
+            CODE    0EB2H     0001H     UNIT         ?PR?ISR_ERRORLIMIT?SLAVE
+            CODE    0EB3H     0001H     UNIT         ?PR?ISR_EP2PIDERROR?SLAVE
+            CODE    0EB4H     0001H     UNIT         ?PR?ISR_EP4PIDERROR?SLAVE
+BL51 BANKED LINKER/LOCATER V6.05                                                      07/28/2020  10:41:13  PAGE 7
 
 
-            CODE    0E99H     0001H     UNIT         ?PR?ISR_EP6PIDERROR?SLAVE
-            CODE    0E9AH     0001H     UNIT         ?PR?ISR_EP8PIDERROR?SLAVE
-            CODE    0E9BH     0001H     UNIT         ?PR?ISR_EP2PFLAG?SLAVE
-            CODE    0E9CH     0001H     UNIT         ?PR?ISR_EP4PFLAG?SLAVE
-            CODE    0E9DH     0001H     UNIT         ?PR?ISR_EP6PFLAG?SLAVE
-            CODE    0E9EH     0001H     UNIT         ?PR?ISR_EP8PFLAG?SLAVE
-            CODE    0E9FH     0001H     UNIT         ?PR?ISR_EP2EFLAG?SLAVE
-            CODE    0EA0H     0001H     UNIT         ?PR?ISR_EP4EFLAG?SLAVE
-            CODE    0EA1H     0001H     UNIT         ?PR?ISR_EP6EFLAG?SLAVE
-            CODE    0EA2H     0001H     UNIT         ?PR?ISR_EP8EFLAG?SLAVE
-            CODE    0EA3H     0001H     UNIT         ?PR?ISR_EP2FFLAG?SLAVE
-            CODE    0EA4H     0001H     UNIT         ?PR?ISR_EP4FFLAG?SLAVE
-            CODE    0EA5H     0001H     UNIT         ?PR?ISR_EP6FFLAG?SLAVE
-            CODE    0EA6H     0001H     UNIT         ?PR?ISR_EP8FFLAG?SLAVE
-            CODE    0EA7H     0001H     UNIT         ?PR?ISR_GPIFCOMPLETE?SLAVE
-            CODE    0EA8H     0001H     UNIT         ?PR?ISR_GPIFWAVEFORM?SLAVE
+            CODE    0EB5H     0001H     UNIT         ?PR?ISR_EP6PIDERROR?SLAVE
+            CODE    0EB6H     0001H     UNIT         ?PR?ISR_EP8PIDERROR?SLAVE
+            CODE    0EB7H     0001H     UNIT         ?PR?ISR_EP2PFLAG?SLAVE
+            CODE    0EB8H     0001H     UNIT         ?PR?ISR_EP4PFLAG?SLAVE
+            CODE    0EB9H     0001H     UNIT         ?PR?ISR_EP6PFLAG?SLAVE
+            CODE    0EBAH     0001H     UNIT         ?PR?ISR_EP8PFLAG?SLAVE
+            CODE    0EBBH     0001H     UNIT         ?PR?ISR_EP2EFLAG?SLAVE
+            CODE    0EBCH     0001H     UNIT         ?PR?ISR_EP4EFLAG?SLAVE
+            CODE    0EBDH     0001H     UNIT         ?PR?ISR_EP6EFLAG?SLAVE
+            CODE    0EBEH     0001H     UNIT         ?PR?ISR_EP8EFLAG?SLAVE
+            CODE    0EBFH     0001H     UNIT         ?PR?ISR_EP2FFLAG?SLAVE
+            CODE    0EC0H     0001H     UNIT         ?PR?ISR_EP4FFLAG?SLAVE
+            CODE    0EC1H     0001H     UNIT         ?PR?ISR_EP6FFLAG?SLAVE
+            CODE    0EC2H     0001H     UNIT         ?PR?ISR_EP8FFLAG?SLAVE
+            CODE    0EC3H     0001H     UNIT         ?PR?ISR_GPIFCOMPLETE?SLAVE
+            CODE    0EC4H     0001H     UNIT         ?PR?ISR_GPIFWAVEFORM?SLAVE
 
 
 
@@ -419,7 +419,7 @@ SEGMENT                                      BIT_GROUP          DATA_GROUP
   +--> ?PR?ISR_EP2PFLAG?SLAVE
   +--> ?PR?ISR_EP4PFLAG?SLAVE
   +--> ?PR?ISR_EP6PFLAG?SLAVE
-BL51 BANKED LINKER/LOCATER V6.05                                                      07/25/2020  11:40:24  PAGE 8
+BL51 BANKED LINKER/LOCATER V6.05                                                      07/28/2020  10:41:13  PAGE 8
 
 
   +--> ?PR?ISR_EP8PFLAG?SLAVE
@@ -479,7 +479,7 @@ SYMBOL TABLE OF MODULE:  slave (FW)
 
   VALUE           TYPE          NAME
   ----------------------------------
-BL51 BANKED LINKER/LOCATER V6.05                                                      07/25/2020  11:40:24  PAGE 9
+BL51 BANKED LINKER/LOCATER V6.05                                                      07/28/2020  10:41:13  PAGE 9
 
 
 
@@ -489,10 +489,10 @@ SYMBOL TABLE OF MODULE:  slave (FW)
   B:0020H.0       PUBLIC        Rwuen
   B:0020H.1       PUBLIC        GotSUD
   D:0008H         PUBLIC        bmReqType
-  C:08F6H         PUBLIC        EPCS_Offset_Lookup_Table
+  C:0E83H         PUBLIC        EPCS_Offset_Lookup_Table
   C:05F2H         PUBLIC        main
   B:00E8H.0       PUBLIC        EUSB
-  C:0E73H         PUBLIC        resume_isr
+  C:08FAH         PUBLIC        resume_isr
   D:0009H         PUBLIC        bRequest
   D:000AH         PUBLIC        pHighSpeedConfigDscr
   D:000CH         PUBLIC        pDeviceDscr
@@ -539,7 +539,7 @@ SYMBOL TABLE OF MODULE:  slave (FW)
   C:0635H         LINE#         142
   C:0635H         LINE#         143
   C:063BH         LINE#         144
-BL51 BANKED LINKER/LOCATER V6.05                                                      07/25/2020  11:40:24  PAGE 10
+BL51 BANKED LINKER/LOCATER V6.05                                                      07/28/2020  10:41:13  PAGE 10
 
 
   C:0641H         LINE#         145
@@ -599,7 +599,7 @@ SYMBOL TABLE OF MODULE:  slave (FW)
   C:07CEH         LINE#         232
   C:07CEH         LINE#         236
   C:07D1H         LINE#         238
-BL51 BANKED LINKER/LOCATER V6.05                                                      07/25/2020  11:40:24  PAGE 11
+BL51 BANKED LINKER/LOCATER V6.05                                                      07/28/2020  10:41:13  PAGE 11
 
 
   -------         ENDPROC       MAIN
@@ -659,7 +659,7 @@ SYMBOL TABLE OF MODULE:  slave (FW)
   C:030EH         LINE#         358
   C:0312H         LINE#         359
   C:0322H         LINE#         360
-BL51 BANKED LINKER/LOCATER V6.05                                                      07/25/2020  11:40:24  PAGE 12
+BL51 BANKED LINKER/LOCATER V6.05                                                      07/28/2020  10:41:13  PAGE 12
 
 
   C:0332H         LINE#         361
@@ -719,7 +719,7 @@ SYMBOL TABLE OF MODULE:  slave (FW)
   C:0422H         LINE#         423
   C:0422H         LINE#         424
   C:0425H         LINE#         425
-BL51 BANKED LINKER/LOCATER V6.05                                                      07/25/2020  11:40:24  PAGE 13
+BL51 BANKED LINKER/LOCATER V6.05                                                      07/28/2020  10:41:13  PAGE 13
 
 
   C:0428H         LINE#         426
@@ -779,7 +779,7 @@ SYMBOL TABLE OF MODULE:  slave (FW)
   C:0583H         LINE#         482
   C:0583H         LINE#         483
   C:0583H         LINE#         484
-BL51 BANKED LINKER/LOCATER V6.05                                                      07/25/2020  11:40:24  PAGE 14
+BL51 BANKED LINKER/LOCATER V6.05                                                      07/28/2020  10:41:13  PAGE 14
 
 
   C:058AH         LINE#         485
@@ -801,9 +801,9 @@ SYMBOL TABLE OF MODULE:  slave (FW)
   C:05F1H         LINE#         508
   -------         ENDPROC       SETUPCOMMAND
   -------         PROC          RESUME_ISR
-  C:0E73H         LINE#         511
-  C:0E73H         LINE#         513
-  C:0E76H         LINE#         514
+  C:08FAH         LINE#         511
+  C:08FAH         LINE#         513
+  C:08FDH         LINE#         514
   -------         ENDPROC       RESUME_ISR
   -------         ENDMOD        FW
 
@@ -839,7 +839,7 @@ SYMBOL TABLE OF MODULE:  slave (FW)
   N:0003H         SYMBOL        ET_INT
   N:0001H         SYMBOL        ET_ISO
   C:01FCH         SYMBOL        FULLSPEEDCONFIGDSCREND
-BL51 BANKED LINKER/LOCATER V6.05                                                      07/25/2020  11:40:24  PAGE 15
+BL51 BANKED LINKER/LOCATER V6.05                                                      07/28/2020  10:41:13  PAGE 15
 
 
   C:01EAH         SYMBOL        HIGHSPEEDCONFIGDSCREND
@@ -863,87 +863,87 @@ SYMBOL TABLE OF MODULE:  slave (FW)
 
   -------         MODULE        SLAVE
   C:0000H         SYMBOL        _ICE_DUMMY_
-  C:0E96H         PUBLIC        ISR_Errorlimit
+  C:0EB2H         PUBLIC        ISR_Errorlimit
   X:8000H         PUBLIC        LED0_ON
   X:9000H         PUBLIC        LED1_ON
   X:A000H         PUBLIC        LED2_ON
   X:B000H         PUBLIC        LED3_ON
   C:0C6CH         PUBLIC        DR_SetConfiguration
   D:003FH         PUBLIC        AlternateSetting
-  C:0E87H         PUBLIC        ISR_Ep0in
+  C:0EA3H         PUBLIC        ISR_Ep0in
   D:0040H         PUBLIC        wn_33ms
-  C:0E89H         PUBLIC        ISR_Ep1in
+  C:0EA5H         PUBLIC        ISR_Ep1in
   C:09B8H         PUBLIC        TD_Init
-  C:0E88H         PUBLIC        ISR_Ep0out
-  C:0E8AH         PUBLIC        ISR_Ep1out
+  C:0EA4H         PUBLIC        ISR_Ep0out
+  C:0EA6H         PUBLIC        ISR_Ep1out
   X:1A22H         PUBLIC        ledX_rdvar
   C:07D4H         PUBLIC        TD_Poll
-  C:0EA7H         PUBLIC        ISR_GpifComplete
-  C:0E7DH         PUBLIC        DR_GetStatus
-  C:0E90H         PUBLIC        ISR_Ep0pingnak
-  C:0E91H         PUBLIC        ISR_Ep1pingnak
-  C:0EA8H         PUBLIC        ISR_GpifWaveform
-  C:0E97H         PUBLIC        ISR_Ep2piderror
-  C:0E92H         PUBLIC        ISR_Ep2pingnak
-  C:0E98H         PUBLIC        ISR_Ep4piderror
-  C:0E93H         PUBLIC        ISR_Ep4pingnak
-  C:0E99H         PUBLIC        ISR_Ep6piderror
-  C:0E94H         PUBLIC        ISR_Ep6pingnak
-  C:0E9AH         PUBLIC        ISR_Ep8piderror
-  C:0E95H         PUBLIC        ISR_Ep8pingnak
+  C:0EC3H         PUBLIC        ISR_GpifComplete
+  C:0E99H         PUBLIC        DR_GetStatus
+  C:0EACH         PUBLIC        ISR_Ep0pingnak
+  C:0EADH         PUBLIC        ISR_Ep1pingnak
+  C:0EC4H         PUBLIC        ISR_GpifWaveform
+  C:0EB3H         PUBLIC        ISR_Ep2piderror
+  C:0EAEH         PUBLIC        ISR_Ep2pingnak
+  C:0EB4H         PUBLIC        ISR_Ep4piderror
+  C:0EAFH         PUBLIC        ISR_Ep4pingnak
+  C:0EB5H         PUBLIC        ISR_Ep6piderror
+  C:0EB0H         PUBLIC        ISR_Ep6pingnak
+  C:0EB6H         PUBLIC        ISR_Ep8piderror
+  C:0EB1H         PUBLIC        ISR_Ep8pingnak
   D:0091H         PUBLIC        EXIF
-  C:0E59H         PUBLIC        DR_GetInterface
-  C:0E7FH         PUBLIC        DR_ClearFeature
+  C:0E71H         PUBLIC        DR_GetInterface
+  C:0E9BH         PUBLIC        DR_ClearFeature
   X:1A23H         PUBLIC        LED_State
-  C:0E9FH         PUBLIC        ISR_Ep2eflag
-  C:0EA3H         PUBLIC        ISR_Ep2fflag
-  C:0EA0H         PUBLIC        ISR_Ep4eflag
-  C:0E6BH         PUBLIC        DR_SetInterface
-BL51 BANKED LINKER/LOCATER V6.05                                                      07/25/2020  11:40:24  PAGE 16
+  C:0EBBH         PUBLIC        ISR_Ep2eflag
+  C:0EBFH         PUBLIC        ISR_Ep2fflag
+  C:0EBCH         PUBLIC        ISR_Ep4eflag
+  C:0E8DH         PUBLIC        DR_SetInterface
+BL51 BANKED LINKER/LOCATER V6.05                                                      07/28/2020  10:41:13  PAGE 16
 
 
-  C:0EA4H         PUBLIC        ISR_Ep4fflag
-  C:0EA1H         PUBLIC        ISR_Ep6eflag
+  C:0EC0H         PUBLIC        ISR_Ep4fflag
+  C:0EBDH         PUBLIC        ISR_Ep6eflag
   X:1A24H         SYMBOL        LED_Status
-  C:0EA5H         PUBLIC        ISR_Ep6fflag
-  C:0E7BH         PUBLIC        DR_GetDescriptor
-  C:0EA2H         PUBLIC        ISR_Ep8eflag
-  C:0EA6H         PUBLIC        ISR_Ep8fflag
+  C:0EC1H         PUBLIC        ISR_Ep6fflag
+  C:0E97H         PUBLIC        DR_GetDescriptor
+  C:0EBEH         PUBLIC        ISR_Ep8eflag
+  C:0EC2H         PUBLIC        ISR_Ep8fflag
   X:8100H         PUBLIC        LED0_OFF
   X:1A25H         SYMBOL        LED_Count
   X:9100H         PUBLIC        LED1_OFF
   X:A100H         PUBLIC        LED2_OFF
   X:B100H         PUBLIC        LED3_OFF
-  C:0E9BH         PUBLIC        ISR_Ep2pflag
+  C:0EB7H         PUBLIC        ISR_Ep2pflag
   B:00B0H.2       PUBLIC        PD2
-  C:0E9CH         PUBLIC        ISR_Ep4pflag
-  C:0E9DH         PUBLIC        ISR_Ep6pflag
-  C:0E9EH         PUBLIC        ISR_Ep8pflag
+  C:0EB8H         PUBLIC        ISR_Ep4pflag
+  C:0EB9H         PUBLIC        ISR_Ep6pflag
+  C:0EBAH         PUBLIC        ISR_Ep8pflag
   D:0042H         PUBLIC        BCH
   B:0020H.5       PUBLIC        done_frm_fpga
   D:00ABH         PUBLIC        EP24FIFOFLGS
   C:0B98H         PUBLIC        _LED_Off
-  C:08DEH         PUBLIC        ISR_Sudav
+  C:0E19H         PUBLIC        ISR_Sudav
   D:00B5H         PUBLIC        OED
-  C:0E77H         PUBLIC        TD_Suspend
+  C:08FEH         PUBLIC        TD_Suspend
   D:0043H         PUBLIC        Configuration
-  C:0E85H         PUBLIC        ISR_Ep0ack
+  C:0EA1H         PUBLIC        ISR_Ep0ack
   C:0CDEH         PUBLIC        ISR_Highspeed
-  C:0E31H         PUBLIC        ISR_Sutok
-  C:0E8FH         PUBLIC        ISR_Ibn
-  C:0E8BH         PUBLIC        ISR_Ep2inout
-  C:0E8CH         PUBLIC        ISR_Ep4inout
-  C:0E83H         PUBLIC        DR_VendorCmnd
-  C:0E79H         PUBLIC        TD_Resume
-  C:0E8DH         PUBLIC        ISR_Ep6inout
-  C:0E86H         PUBLIC        ISR_Stub
-  C:0E8EH         PUBLIC        ISR_Ep8inout
+  C:0E49H         PUBLIC        ISR_Sutok
+  C:0EABH         PUBLIC        ISR_Ibn
+  C:0EA7H         PUBLIC        ISR_Ep2inout
+  C:0EA8H         PUBLIC        ISR_Ep4inout
+  C:0E9FH         PUBLIC        DR_VendorCmnd
+  C:0E95H         PUBLIC        TD_Resume
+  C:0EA9H         PUBLIC        ISR_Ep6inout
+  C:0EA2H         PUBLIC        ISR_Stub
+  C:0EAAH         PUBLIC        ISR_Ep8inout
   C:0CA7H         PUBLIC        ISR_Ures
   C:0BDFH         PUBLIC        _LED_On
-  C:0E81H         PUBLIC        DR_SetFeature
+  C:0E9DH         PUBLIC        DR_SetFeature
   C:0D15H         PUBLIC        ISR_Sof
-  C:0E47H         PUBLIC        DR_GetConfiguration
-  C:0E19H         PUBLIC        ISR_Susp
+  C:0E5FH         PUBLIC        DR_GetConfiguration
+  C:0E31H         PUBLIC        ISR_Susp
   -------         PROC          TD_INIT
   C:09B8H         LINE#         80
   C:09B8H         LINE#         81
@@ -959,7 +959,7 @@ SYMBOL TABLE OF MODULE:  slave (FW)
   C:09E0H         LINE#         121
   C:09E4H         LINE#         136
   C:09E8H         LINE#         138
-BL51 BANKED LINKER/LOCATER V6.05                                                      07/25/2020  11:40:24  PAGE 17
+BL51 BANKED LINKER/LOCATER V6.05                                                      07/28/2020  10:41:13  PAGE 17
 
 
   C:09EBH         LINE#         139
@@ -1019,7 +1019,7 @@ SYMBOL TABLE OF MODULE:  slave (FW)
   C:0815H         LINE#         225
   C:0819H         LINE#         226
   C:0819H         LINE#         227
-BL51 BANKED LINKER/LOCATER V6.05                                                      07/25/2020  11:40:24  PAGE 18
+BL51 BANKED LINKER/LOCATER V6.05                                                      07/28/2020  10:41:13  PAGE 18
 
 
   C:0819H         LINE#         229
@@ -1039,379 +1039,381 @@ SYMBOL TABLE OF MODULE:  slave (FW)
   C:0870H         LINE#         250
   C:0876H         LINE#         251
   C:0876H         LINE#         254
-  C:088CH         LINE#         255
-  C:0899H         LINE#         258
-  C:08A9H         LINE#         262
-  C:08C2H         LINE#         263
+  C:0890H         LINE#         255
+  C:089DH         LINE#         256
+  C:08AAH         LINE#         257
+  C:08B7H         LINE#         260
   C:08C5H         LINE#         264
-  C:08CBH         LINE#         265
-  C:08CEH         LINE#         266
-  C:08D4H         LINE#         267
-  C:08D7H         LINE#         268
-  C:08DDH         LINE#         271
-  C:08DDH         LINE#         272
-  C:08DDH         LINE#         274
+  C:08DEH         LINE#         265
+  C:08E1H         LINE#         266
+  C:08E7H         LINE#         267
+  C:08EAH         LINE#         268
+  C:08F0H         LINE#         269
+  C:08F3H         LINE#         270
+  C:08F9H         LINE#         273
+  C:08F9H         LINE#         274
+  C:08F9H         LINE#         276
   -------         ENDPROC       TD_POLL
   -------         PROC          TD_SUSPEND
-  C:0E77H         LINE#         276
-  C:0E77H         LINE#         277
-  C:0E77H         LINE#         278
-  C:0E78H         LINE#         279
+  C:08FEH         LINE#         278
+  C:08FEH         LINE#         279
+  C:08FEH         LINE#         280
+  C:08FFH         LINE#         281
   -------         ENDPROC       TD_SUSPEND
   -------         PROC          TD_RESUME
-  C:0E79H         LINE#         281
-  C:0E79H         LINE#         282
-  C:0E79H         LINE#         283
-  C:0E7AH         LINE#         284
+  C:0E95H         LINE#         283
+  C:0E95H         LINE#         284
+  C:0E95H         LINE#         285
+  C:0E96H         LINE#         286
   -------         ENDPROC       TD_RESUME
   -------         PROC          DR_GETDESCRIPTOR
-  C:0E7BH         LINE#         290
-  C:0E7BH         LINE#         291
-  C:0E7BH         LINE#         292
-  C:0E7CH         LINE#         293
+  C:0E97H         LINE#         292
+  C:0E97H         LINE#         293
+  C:0E97H         LINE#         294
+  C:0E98H         LINE#         295
   -------         ENDPROC       DR_GETDESCRIPTOR
   -------         PROC          DR_SETCONFIGURATION
-  C:0C6CH         LINE#         295
-  C:0C6CH         LINE#         296
+  C:0C6CH         LINE#         297
   C:0C6CH         LINE#         298
-  C:0C73H         LINE#         299
+  C:0C6CH         LINE#         300
   C:0C73H         LINE#         301
-  C:0C79H         LINE#         302
-  C:0C7CH         LINE#         303
-  C:0C81H         LINE#         305
-BL51 BANKED LINKER/LOCATER V6.05                                                      07/25/2020  11:40:24  PAGE 19
+  C:0C73H         LINE#         303
+  C:0C79H         LINE#         304
+BL51 BANKED LINKER/LOCATER V6.05                                                      07/28/2020  10:41:13  PAGE 19
 
 
-  C:0C83H         LINE#         307
-  C:0C83H         LINE#         308
-  C:0C88H         LINE#         309
-  C:0C8BH         LINE#         310
-  C:0C8FH         LINE#         311
-  C:0C92H         LINE#         312
-  C:0C98H         LINE#         313
-  C:0C9BH         LINE#         314
-  C:0C9FH         LINE#         315
+  C:0C7CH         LINE#         305
+  C:0C81H         LINE#         307
+  C:0C83H         LINE#         309
+  C:0C83H         LINE#         310
+  C:0C88H         LINE#         311
+  C:0C8BH         LINE#         312
+  C:0C8FH         LINE#         313
+  C:0C92H         LINE#         314
+  C:0C98H         LINE#         315
+  C:0C9BH         LINE#         316
   C:0C9FH         LINE#         317
-  C:0CA5H         LINE#         318
-  C:0CA6H         LINE#         319
+  C:0C9FH         LINE#         319
+  C:0CA5H         LINE#         320
+  C:0CA6H         LINE#         321
   -------         ENDPROC       DR_SETCONFIGURATION
   -------         PROC          DR_GETCONFIGURATION
-  C:0E47H         LINE#         321
-  C:0E47H         LINE#         322
-  C:0E47H         LINE#         323
-  C:0E4DH         LINE#         324
-  C:0E52H         LINE#         325
-  C:0E57H         LINE#         326
-  C:0E58H         LINE#         327
+  C:0E5FH         LINE#         323
+  C:0E5FH         LINE#         324
+  C:0E5FH         LINE#         325
+  C:0E65H         LINE#         326
+  C:0E6AH         LINE#         327
+  C:0E6FH         LINE#         328
+  C:0E70H         LINE#         329
   -------         ENDPROC       DR_GETCONFIGURATION
   -------         PROC          DR_SETINTERFACE
-  C:0E6BH         LINE#         329
-  C:0E6BH         LINE#         330
-  C:0E6BH         LINE#         331
-  C:0E71H         LINE#         332
-  C:0E72H         LINE#         333
+  C:0E8DH         LINE#         331
+  C:0E8DH         LINE#         332
+  C:0E8DH         LINE#         333
+  C:0E93H         LINE#         334
+  C:0E94H         LINE#         335
   -------         ENDPROC       DR_SETINTERFACE
   -------         PROC          DR_GETINTERFACE
-  C:0E59H         LINE#         335
-  C:0E59H         LINE#         336
-  C:0E59H         LINE#         337
-  C:0E5FH         LINE#         338
-  C:0E64H         LINE#         339
-  C:0E69H         LINE#         340
-  C:0E6AH         LINE#         341
+  C:0E71H         LINE#         337
+  C:0E71H         LINE#         338
+  C:0E71H         LINE#         339
+  C:0E77H         LINE#         340
+  C:0E7CH         LINE#         341
+  C:0E81H         LINE#         342
+  C:0E82H         LINE#         343
   -------         ENDPROC       DR_GETINTERFACE
   -------         PROC          DR_GETSTATUS
-  C:0E7DH         LINE#         343
-  C:0E7DH         LINE#         344
-  C:0E7DH         LINE#         345
-  C:0E7EH         LINE#         346
+  C:0E99H         LINE#         345
+  C:0E99H         LINE#         346
+  C:0E99H         LINE#         347
+  C:0E9AH         LINE#         348
   -------         ENDPROC       DR_GETSTATUS
   -------         PROC          DR_CLEARFEATURE
-  C:0E7FH         LINE#         348
-  C:0E7FH         LINE#         349
-  C:0E7FH         LINE#         350
-  C:0E80H         LINE#         351
+  C:0E9BH         LINE#         350
+  C:0E9BH         LINE#         351
+  C:0E9BH         LINE#         352
+  C:0E9CH         LINE#         353
   -------         ENDPROC       DR_CLEARFEATURE
   -------         PROC          DR_SETFEATURE
-  C:0E81H         LINE#         353
-  C:0E81H         LINE#         354
-  C:0E81H         LINE#         355
-  C:0E82H         LINE#         356
+  C:0E9DH         LINE#         355
+  C:0E9DH         LINE#         356
+  C:0E9DH         LINE#         357
+  C:0E9EH         LINE#         358
+BL51 BANKED LINKER/LOCATER V6.05                                                      07/28/2020  10:41:13  PAGE 20
+
+
   -------         ENDPROC       DR_SETFEATURE
   -------         PROC          DR_VENDORCMND
-BL51 BANKED LINKER/LOCATER V6.05                                                      07/25/2020  11:40:24  PAGE 20
-
-
-  C:0E83H         LINE#         358
-  C:0E83H         LINE#         359
-  C:0E83H         LINE#         360
-  C:0E84H         LINE#         361
+  C:0E9FH         LINE#         360
+  C:0E9FH         LINE#         361
+  C:0E9FH         LINE#         362
+  C:0EA0H         LINE#         363
   -------         ENDPROC       DR_VENDORCMND
   -------         PROC          ISR_SUDAV
-  C:08DEH         LINE#         369
-  C:08E4H         LINE#         371
-  C:08E6H         LINE#         372
-  C:08E9H         LINE#         373
-  C:08EFH         LINE#         374
+  C:0E19H         LINE#         371
+  C:0E1FH         LINE#         373
+  C:0E21H         LINE#         374
+  C:0E24H         LINE#         375
+  C:0E2AH         LINE#         376
   -------         ENDPROC       ISR_SUDAV
   -------         PROC          ISR_SUTOK
-  C:0E31H         LINE#         377
-  C:0E37H         LINE#         379
-  C:0E3AH         LINE#         380
-  C:0E40H         LINE#         381
+  C:0E49H         LINE#         379
+  C:0E4FH         LINE#         381
+  C:0E52H         LINE#         382
+  C:0E58H         LINE#         383
   -------         ENDPROC       ISR_SUTOK
   -------         PROC          ISR_SOF
-  C:0D15H         LINE#         383
-  C:0D1DH         LINE#         385
-  C:0D32H         LINE#         386
-  C:0D38H         LINE#         387
-  C:0D3BH         LINE#         388
-  C:0D41H         LINE#         389
+  C:0D15H         LINE#         385
+  C:0D1DH         LINE#         387
+  C:0D32H         LINE#         388
+  C:0D38H         LINE#         389
+  C:0D3BH         LINE#         390
+  C:0D41H         LINE#         391
   -------         ENDPROC       ISR_SOF
   -------         PROC          ISR_URES
-  C:0CA7H         LINE#         391
-  C:0CADH         LINE#         393
-  C:0CB4H         LINE#         394
-  C:0CB4H         LINE#         395
-  C:0CBAH         LINE#         396
-  C:0CC0H         LINE#         397
-  C:0CC2H         LINE#         399
-  C:0CC2H         LINE#         400
-  C:0CC8H         LINE#         401
-  C:0CCEH         LINE#         402
+  C:0CA7H         LINE#         393
+  C:0CADH         LINE#         395
+  C:0CB4H         LINE#         396
+  C:0CB4H         LINE#         397
+  C:0CBAH         LINE#         398
+  C:0CC0H         LINE#         399
+  C:0CC2H         LINE#         401
+  C:0CC2H         LINE#         402
+  C:0CC8H         LINE#         403
   C:0CCEH         LINE#         404
-  C:0CD1H         LINE#         405
-  C:0CD7H         LINE#         406
+  C:0CCEH         LINE#         406
+  C:0CD1H         LINE#         407
+  C:0CD7H         LINE#         408
   -------         ENDPROC       ISR_URES
   -------         PROC          ISR_SUSP
-  C:0E19H         LINE#         408
-  C:0E1FH         LINE#         410
-  C:0E21H         LINE#         411
-  C:0E24H         LINE#         412
-  C:0E2AH         LINE#         413
+  C:0E31H         LINE#         410
+  C:0E37H         LINE#         412
+  C:0E39H         LINE#         413
+  C:0E3CH         LINE#         414
+  C:0E42H         LINE#         415
   -------         ENDPROC       ISR_SUSP
   -------         PROC          ISR_HIGHSPEED
-  C:0CDEH         LINE#         415
-  C:0CE4H         LINE#         417
-  C:0CEBH         LINE#         418
-  C:0CEBH         LINE#         419
-  C:0CF1H         LINE#         420
-  C:0CF7H         LINE#         421
-  C:0CF9H         LINE#         423
-  C:0CF9H         LINE#         424
-BL51 BANKED LINKER/LOCATER V6.05                                                      07/25/2020  11:40:24  PAGE 21
+  C:0CDEH         LINE#         417
+  C:0CE4H         LINE#         419
+  C:0CEBH         LINE#         420
+  C:0CEBH         LINE#         421
+  C:0CF1H         LINE#         422
+  C:0CF7H         LINE#         423
+BL51 BANKED LINKER/LOCATER V6.05                                                      07/28/2020  10:41:13  PAGE 21
 
 
-  C:0CFFH         LINE#         425
-  C:0D05H         LINE#         426
+  C:0CF9H         LINE#         425
+  C:0CF9H         LINE#         426
+  C:0CFFH         LINE#         427
   C:0D05H         LINE#         428
-  C:0D08H         LINE#         429
-  C:0D0EH         LINE#         430
+  C:0D05H         LINE#         430
+  C:0D08H         LINE#         431
+  C:0D0EH         LINE#         432
   -------         ENDPROC       ISR_HIGHSPEED
   -------         PROC          ISR_EP0ACK
-  C:0E85H         LINE#         431
-  C:0E85H         LINE#         433
+  C:0EA1H         LINE#         433
+  C:0EA1H         LINE#         435
   -------         ENDPROC       ISR_EP0ACK
   -------         PROC          ISR_STUB
-  C:0E86H         LINE#         434
-  C:0E86H         LINE#         436
+  C:0EA2H         LINE#         436
+  C:0EA2H         LINE#         438
   -------         ENDPROC       ISR_STUB
   -------         PROC          ISR_EP0IN
-  C:0E87H         LINE#         437
-  C:0E87H         LINE#         439
+  C:0EA3H         LINE#         439
+  C:0EA3H         LINE#         441
   -------         ENDPROC       ISR_EP0IN
   -------         PROC          ISR_EP0OUT
-  C:0E88H         LINE#         440
-  C:0E88H         LINE#         442
+  C:0EA4H         LINE#         442
+  C:0EA4H         LINE#         444
   -------         ENDPROC       ISR_EP0OUT
   -------         PROC          ISR_EP1IN
-  C:0E89H         LINE#         443
-  C:0E89H         LINE#         445
+  C:0EA5H         LINE#         445
+  C:0EA5H         LINE#         447
   -------         ENDPROC       ISR_EP1IN
   -------         PROC          ISR_EP1OUT
-  C:0E8AH         LINE#         446
-  C:0E8AH         LINE#         448
+  C:0EA6H         LINE#         448
+  C:0EA6H         LINE#         450
   -------         ENDPROC       ISR_EP1OUT
   -------         PROC          ISR_EP2INOUT
-  C:0E8BH         LINE#         449
-  C:0E8BH         LINE#         451
+  C:0EA7H         LINE#         451
+  C:0EA7H         LINE#         453
   -------         ENDPROC       ISR_EP2INOUT
   -------         PROC          ISR_EP4INOUT
-  C:0E8CH         LINE#         452
-  C:0E8CH         LINE#         454
+  C:0EA8H         LINE#         454
+  C:0EA8H         LINE#         456
   -------         ENDPROC       ISR_EP4INOUT
   -------         PROC          ISR_EP6INOUT
-  C:0E8DH         LINE#         455
-  C:0E8DH         LINE#         457
+  C:0EA9H         LINE#         457
+  C:0EA9H         LINE#         459
   -------         ENDPROC       ISR_EP6INOUT
   -------         PROC          ISR_EP8INOUT
-  C:0E8EH         LINE#         458
-  C:0E8EH         LINE#         460
+  C:0EAAH         LINE#         460
+  C:0EAAH         LINE#         462
   -------         ENDPROC       ISR_EP8INOUT
   -------         PROC          ISR_IBN
-  C:0E8FH         LINE#         461
-  C:0E8FH         LINE#         463
+  C:0EABH         LINE#         463
+  C:0EABH         LINE#         465
   -------         ENDPROC       ISR_IBN
   -------         PROC          ISR_EP0PINGNAK
-  C:0E90H         LINE#         464
-  C:0E90H         LINE#         466
+  C:0EACH         LINE#         466
+  C:0EACH         LINE#         468
   -------         ENDPROC       ISR_EP0PINGNAK
   -------         PROC          ISR_EP1PINGNAK
-  C:0E91H         LINE#         467
-  C:0E91H         LINE#         469
-BL51 BANKED LINKER/LOCATER V6.05                                                      07/25/2020  11:40:24  PAGE 22
+BL51 BANKED LINKER/LOCATER V6.05                                                      07/28/2020  10:41:13  PAGE 22
 
 
+  C:0EADH         LINE#         469
+  C:0EADH         LINE#         471
   -------         ENDPROC       ISR_EP1PINGNAK
   -------         PROC          ISR_EP2PINGNAK
-  C:0E92H         LINE#         470
-  C:0E92H         LINE#         472
+  C:0EAEH         LINE#         472
+  C:0EAEH         LINE#         474
   -------         ENDPROC       ISR_EP2PINGNAK
   -------         PROC          ISR_EP4PINGNAK
-  C:0E93H         LINE#         473
-  C:0E93H         LINE#         475
+  C:0EAFH         LINE#         475
+  C:0EAFH         LINE#         477
   -------         ENDPROC       ISR_EP4PINGNAK
   -------         PROC          ISR_EP6PINGNAK
-  C:0E94H         LINE#         476
-  C:0E94H         LINE#         478
+  C:0EB0H         LINE#         478
+  C:0EB0H         LINE#         480
   -------         ENDPROC       ISR_EP6PINGNAK
   -------         PROC          ISR_EP8PINGNAK
-  C:0E95H         LINE#         479
-  C:0E95H         LINE#         481
+  C:0EB1H         LINE#         481
+  C:0EB1H         LINE#         483
   -------         ENDPROC       ISR_EP8PINGNAK
   -------         PROC          ISR_ERRORLIMIT
-  C:0E96H         LINE#         482
-  C:0E96H         LINE#         484
+  C:0EB2H         LINE#         484
+  C:0EB2H         LINE#         486
   -------         ENDPROC       ISR_ERRORLIMIT
   -------         PROC          ISR_EP2PIDERROR
-  C:0E97H         LINE#         485
-  C:0E97H         LINE#         487
+  C:0EB3H         LINE#         487
+  C:0EB3H         LINE#         489
   -------         ENDPROC       ISR_EP2PIDERROR
   -------         PROC          ISR_EP4PIDERROR
-  C:0E98H         LINE#         488
-  C:0E98H         LINE#         490
+  C:0EB4H         LINE#         490
+  C:0EB4H         LINE#         492
   -------         ENDPROC       ISR_EP4PIDERROR
   -------         PROC          ISR_EP6PIDERROR
-  C:0E99H         LINE#         491
-  C:0E99H         LINE#         493
+  C:0EB5H         LINE#         493
+  C:0EB5H         LINE#         495
   -------         ENDPROC       ISR_EP6PIDERROR
   -------         PROC          ISR_EP8PIDERROR
-  C:0E9AH         LINE#         494
-  C:0E9AH         LINE#         496
+  C:0EB6H         LINE#         496
+  C:0EB6H         LINE#         498
   -------         ENDPROC       ISR_EP8PIDERROR
   -------         PROC          ISR_EP2PFLAG
-  C:0E9BH         LINE#         497
-  C:0E9BH         LINE#         499
+  C:0EB7H         LINE#         499
+  C:0EB7H         LINE#         501
   -------         ENDPROC       ISR_EP2PFLAG
   -------         PROC          ISR_EP4PFLAG
-  C:0E9CH         LINE#         500
-  C:0E9CH         LINE#         502
+  C:0EB8H         LINE#         502
+  C:0EB8H         LINE#         504
   -------         ENDPROC       ISR_EP4PFLAG
   -------         PROC          ISR_EP6PFLAG
-  C:0E9DH         LINE#         503
-  C:0E9DH         LINE#         505
+  C:0EB9H         LINE#         505
+  C:0EB9H         LINE#         507
   -------         ENDPROC       ISR_EP6PFLAG
   -------         PROC          ISR_EP8PFLAG
-  C:0E9EH         LINE#         506
-  C:0E9EH         LINE#         508
+  C:0EBAH         LINE#         508
+  C:0EBAH         LINE#         510
   -------         ENDPROC       ISR_EP8PFLAG
   -------         PROC          ISR_EP2EFLAG
-  C:0E9FH         LINE#         509
-  C:0E9FH         LINE#         511
+  C:0EBBH         LINE#         511
+BL51 BANKED LINKER/LOCATER V6.05                                                      07/28/2020  10:41:13  PAGE 23
+
+
+  C:0EBBH         LINE#         513
   -------         ENDPROC       ISR_EP2EFLAG
-BL51 BANKED LINKER/LOCATER V6.05                                                      07/25/2020  11:40:24  PAGE 23
-
-
   -------         PROC          ISR_EP4EFLAG
-  C:0EA0H         LINE#         512
-  C:0EA0H         LINE#         514
+  C:0EBCH         LINE#         514
+  C:0EBCH         LINE#         516
   -------         ENDPROC       ISR_EP4EFLAG
   -------         PROC          ISR_EP6EFLAG
-  C:0EA1H         LINE#         515
-  C:0EA1H         LINE#         517
+  C:0EBDH         LINE#         517
+  C:0EBDH         LINE#         519
   -------         ENDPROC       ISR_EP6EFLAG
   -------         PROC          ISR_EP8EFLAG
-  C:0EA2H         LINE#         518
-  C:0EA2H         LINE#         520
+  C:0EBEH         LINE#         520
+  C:0EBEH         LINE#         522
   -------         ENDPROC       ISR_EP8EFLAG
   -------         PROC          ISR_EP2FFLAG
-  C:0EA3H         LINE#         521
-  C:0EA3H         LINE#         523
+  C:0EBFH         LINE#         523
+  C:0EBFH         LINE#         525
   -------         ENDPROC       ISR_EP2FFLAG
   -------         PROC          ISR_EP4FFLAG
-  C:0EA4H         LINE#         524
-  C:0EA4H         LINE#         526
+  C:0EC0H         LINE#         526
+  C:0EC0H         LINE#         528
   -------         ENDPROC       ISR_EP4FFLAG
   -------         PROC          ISR_EP6FFLAG
-  C:0EA5H         LINE#         527
-  C:0EA5H         LINE#         529
+  C:0EC1H         LINE#         529
+  C:0EC1H         LINE#         531
   -------         ENDPROC       ISR_EP6FFLAG
   -------         PROC          ISR_EP8FFLAG
-  C:0EA6H         LINE#         530
-  C:0EA6H         LINE#         532
+  C:0EC2H         LINE#         532
+  C:0EC2H         LINE#         534
   -------         ENDPROC       ISR_EP8FFLAG
   -------         PROC          ISR_GPIFCOMPLETE
-  C:0EA7H         LINE#         533
-  C:0EA7H         LINE#         535
+  C:0EC3H         LINE#         535
+  C:0EC3H         LINE#         537
   -------         ENDPROC       ISR_GPIFCOMPLETE
   -------         PROC          ISR_GPIFWAVEFORM
-  C:0EA8H         LINE#         536
-  C:0EA8H         LINE#         538
+  C:0EC4H         LINE#         538
+  C:0EC4H         LINE#         540
   -------         ENDPROC       ISR_GPIFWAVEFORM
   -------         PROC          _LED_OFF
   D:0005H         SYMBOL        LED_Mask
-  C:0B98H         LINE#         553
-  C:0B9AH         LINE#         554
-  C:0B9AH         LINE#         555
-  C:0B9EH         LINE#         556
-  C:0B9EH         LINE#         557
-  C:0BA6H         LINE#         558
-  C:0BABH         LINE#         559
-  C:0BABH         LINE#         560
-  C:0BAFH         LINE#         561
-  C:0BAFH         LINE#         562
-  C:0BB7H         LINE#         563
-  C:0BBCH         LINE#         564
-  C:0BBCH         LINE#         565
-  C:0BC0H         LINE#         566
-  C:0BC0H         LINE#         567
-  C:0BC8H         LINE#         568
-  C:0BCDH         LINE#         569
-  C:0BCDH         LINE#         570
-  C:0BD1H         LINE#         571
-BL51 BANKED LINKER/LOCATER V6.05                                                      07/25/2020  11:40:24  PAGE 24
+  C:0B98H         LINE#         555
+  C:0B9AH         LINE#         556
+  C:0B9AH         LINE#         557
+  C:0B9EH         LINE#         558
+  C:0B9EH         LINE#         559
+  C:0BA6H         LINE#         560
+  C:0BABH         LINE#         561
+  C:0BABH         LINE#         562
+  C:0BAFH         LINE#         563
+  C:0BAFH         LINE#         564
+  C:0BB7H         LINE#         565
+  C:0BBCH         LINE#         566
+  C:0BBCH         LINE#         567
+  C:0BC0H         LINE#         568
+  C:0BC0H         LINE#         569
+  C:0BC8H         LINE#         570
+  C:0BCDH         LINE#         571
+BL51 BANKED LINKER/LOCATER V6.05                                                      07/28/2020  10:41:13  PAGE 24
 
 
-  C:0BD1H         LINE#         572
-  C:0BD9H         LINE#         573
-  C:0BDEH         LINE#         574
-  C:0BDEH         LINE#         575
+  C:0BCDH         LINE#         572
+  C:0BD1H         LINE#         573
+  C:0BD1H         LINE#         574
+  C:0BD9H         LINE#         575
+  C:0BDEH         LINE#         576
+  C:0BDEH         LINE#         577
   -------         ENDPROC       _LED_OFF
   -------         PROC          _LED_ON
   D:0005H         SYMBOL        LED_Mask
-  C:0BDFH         LINE#         577
-  C:0BE1H         LINE#         578
-  C:0BE1H         LINE#         579
-  C:0BE5H         LINE#         580
-  C:0BE5H         LINE#         581
-  C:0BEDH         LINE#         582
-  C:0BF2H         LINE#         583
-  C:0BF2H         LINE#         584
-  C:0BF6H         LINE#         585
-  C:0BF6H         LINE#         586
-  C:0BFEH         LINE#         587
-  C:0C03H         LINE#         588
-  C:0C03H         LINE#         589
-  C:0C07H         LINE#         590
-  C:0C07H         LINE#         591
-  C:0C0FH         LINE#         592
-  C:0C14H         LINE#         593
-  C:0C14H         LINE#         594
-  C:0C18H         LINE#         595
-  C:0C18H         LINE#         596
-  C:0C20H         LINE#         597
-  C:0C25H         LINE#         598
-  C:0C25H         LINE#         599
+  C:0BDFH         LINE#         579
+  C:0BE1H         LINE#         580
+  C:0BE1H         LINE#         581
+  C:0BE5H         LINE#         582
+  C:0BE5H         LINE#         583
+  C:0BEDH         LINE#         584
+  C:0BF2H         LINE#         585
+  C:0BF2H         LINE#         586
+  C:0BF6H         LINE#         587
+  C:0BF6H         LINE#         588
+  C:0BFEH         LINE#         589
+  C:0C03H         LINE#         590
+  C:0C03H         LINE#         591
+  C:0C07H         LINE#         592
+  C:0C07H         LINE#         593
+  C:0C0FH         LINE#         594
+  C:0C14H         LINE#         595
+  C:0C14H         LINE#         596
+  C:0C18H         LINE#         597
+  C:0C18H         LINE#         598
+  C:0C20H         LINE#         599
+  C:0C25H         LINE#         600
+  C:0C25H         LINE#         601
   -------         ENDPROC       _LED_ON
   -------         ENDMOD        SLAVE
 
@@ -1437,11 +1439,11 @@ SYMBOL TABLE OF MODULE:  slave (FW)
   C:0D4AH         PUBLIC        EZUSB_Discon
   -------         PROC          EZUSB_DISCON
   B:0020H.6       SYMBOL        renum
+BL51 BANKED LINKER/LOCATER V6.05                                                      07/28/2020  10:41:13  PAGE 25
+
+
   C:0D4AH         LINE#         39
   C:0D4AH         LINE#         40
-BL51 BANKED LINKER/LOCATER V6.05                                                      07/25/2020  11:40:24  PAGE 25
-
-
   C:0D4AH         LINE#         42
   C:0D4DH         LINE#         43
   C:0D56H         LINE#         45
@@ -1497,11 +1499,11 @@ SYMBOL TABLE OF MODULE:  slave (FW)
   X:E6A9H         PUBLIC        EP6FIFOFLGS
   X:E69DH         PUBLIC        EP8BCL
   X:E67CH         PUBLIC        XAUTODAT2
+BL51 BANKED LINKER/LOCATER V6.05                                                      07/28/2020  10:41:13  PAGE 26
+
+
   X:E684H         PUBLIC        USBFRAMEH
   X:E6F5H         PUBLIC        GPIFABORT
-BL51 BANKED LINKER/LOCATER V6.05                                                      07/25/2020  11:40:24  PAGE 26
-
-
   X:E6AAH         PUBLIC        EP8FIFOFLGS
   X:E6F8H         PUBLIC        DBUG
   X:E740H         PUBLIC        EP0BUF
@@ -1557,11 +1559,11 @@ SYMBOL TABLE OF MODULE:  slave (FW)
   X:E6B2H         PUBLIC        EP8FIFOBCL
   X:E68DH         PUBLIC        EP1OUTBC
   X:E622H         PUBLIC        EP4AUTOINLENH
+BL51 BANKED LINKER/LOCATER V6.05                                                      07/28/2020  10:41:13  PAGE 27
+
+
   X:E666H         PUBLIC        INT2IVEC
   X:E659H         PUBLIC        IBNIRQ
-BL51 BANKED LINKER/LOCATER V6.05                                                      07/25/2020  11:40:24  PAGE 27
-
-
   X:E6FBH         PUBLIC        CT1
   X:E6C4H         PUBLIC        GPIFADRH
   X:E65BH         PUBLIC        NAKIRQ
@@ -1617,11 +1619,11 @@ SYMBOL TABLE OF MODULE:  slave (FW)
   X:E6A3H         PUBLIC        EP2CS
   X:E509H         PUBLIC        GPCR2
   X:E67AH         PUBLIC        I2CTL
+BL51 BANKED LINKER/LOCATER V6.05                                                      07/28/2020  10:41:13  PAGE 28
+
+
   X:E655H         PUBLIC        EP6FIFOIRQ
   X:E603H         PUBLIC        PINFLAGSCD
-BL51 BANKED LINKER/LOCATER V6.05                                                      07/25/2020  11:40:24  PAGE 28
-
-
   X:E6A4H         PUBLIC        EP4CS
   X:E648H         PUBLIC        INPKTEND
   X:E657H         PUBLIC        EP8FIFOIRQ
@@ -1677,11 +1679,11 @@ SYMBOL TABLE OF MODULE:  slave (FW)
   -------         MODULE        SUSP
   C:0DD0H         SEGMENT       EZUSB
   C:0DD0H         PUBLIC        EZUSB_SUSP
+BL51 BANKED LINKER/LOCATER V6.05                                                      07/28/2020  10:41:13  PAGE 29
+
+
   B:00D0H.6       SYMBOL        AC
   D:00E0H         SYMBOL        ACC
-BL51 BANKED LINKER/LOCATER V6.05                                                      07/25/2020  11:40:24  PAGE 29
-
-
   D:009AH         SYMBOL        APTR1H
   D:009BH         SYMBOL        APTR1L
   D:009AH         SYMBOL        AUTOPTR1H
@@ -1737,11 +1739,11 @@ SYMBOL TABLE OF MODULE:  slave (FW)
   X:E6A0H         SYMBOL        EP0CS
   X:E780H         SYMBOL        EP10UTBUF
   X:E68FH         SYMBOL        EP1INBC
+BL51 BANKED LINKER/LOCATER V6.05                                                      07/28/2020  10:41:13  PAGE 30
+
+
   X:E7C0H         SYMBOL        EP1INBUF
   X:E611H         SYMBOL        EP1INCFG
-BL51 BANKED LINKER/LOCATER V6.05                                                      07/25/2020  11:40:24  PAGE 30
-
-
   X:E6A2H         SYMBOL        EP1INCS
   X:E68DH         SYMBOL        EP1OUTBC
   X:E610H         SYMBOL        EP1OUTCFG
@@ -1797,11 +1799,11 @@ SYMBOL TABLE OF MODULE:  slave (FW)
   X:E699H         SYMBOL        EP6BCL
   X:E614H         SYMBOL        EP6CFG
   X:E6A5H         SYMBOL        EP6CS
+BL51 BANKED LINKER/LOCATER V6.05                                                      07/28/2020  10:41:13  PAGE 31
+
+
   X:E6AFH         SYMBOL        EP6FIFOBCH
   X:E6B0H         SYMBOL        EP6FIFOBCL
-BL51 BANKED LINKER/LOCATER V6.05                                                      07/25/2020  11:40:24  PAGE 31
-
-
   X:F800H         SYMBOL        EP6FIFOBUF
   X:E61AH         SYMBOL        EP6FIFOCFG
   X:E6A9H         SYMBOL        EP6FIFOFLGS
@@ -1857,11 +1859,11 @@ SYMBOL TABLE OF MODULE:  slave (FW)
   B:00D0H.5       SYMBOL        F0
   X:E609H         SYMBOL        FIFOPINPOLAR
   X:E604H         SYMBOL        FIFORESET
+BL51 BANKED LINKER/LOCATER V6.05                                                      07/28/2020  10:41:13  PAGE 32
+
+
   B:00D0H.1       SYMBOL        FL
   X:E6CCH         SYMBOL        FLOWEDGE
-BL51 BANKED LINKER/LOCATER V6.05                                                      07/25/2020  11:40:24  PAGE 32
-
-
   X:E6C8H         SYMBOL        FLOWEQ0CTL
   X:E6C9H         SYMBOL        FLOWEQ1CTL
   X:E6C7H         SYMBOL        FLOWLOGIC
@@ -1917,11 +1919,11 @@ SYMBOL TABLE OF MODULE:  slave (FW)
   B:0088H.2       SYMBOL        IT1
   X:E686H         SYMBOL        MICROFRAME
   D:0092H         SYMBOL        MPAGE
+BL51 BANKED LINKER/LOCATER V6.05                                                      07/28/2020  10:41:13  PAGE 33
+
+
   X:E65AH         SYMBOL        NAKIE
   X:E65BH         SYMBOL        NAKIRQ
-BL51 BANKED LINKER/LOCATER V6.05                                                      07/25/2020  11:40:24  PAGE 33
-
-
   D:00B2H         SYMBOL        OEA
   D:00B3H         SYMBOL        OEB
   D:00B4H         SYMBOL        OEC
@@ -1977,11 +1979,11 @@ SYMBOL TABLE OF MODULE:  slave (FW)
   D:0081H         SYMBOL        SP
   X:E6B5H         SYMBOL        SUDPTRCTL
   X:E6B3H         SYMBOL        SUDPTRH
+BL51 BANKED LINKER/LOCATER V6.05                                                      07/28/2020  10:41:13  PAGE 34
+
+
   X:E6B4H         SYMBOL        SUDPTRL
   N:0000H         SYMBOL        SUSP
-BL51 BANKED LINKER/LOCATER V6.05                                                      07/25/2020  11:40:24  PAGE 34
-
-
   X:E681H         SYMBOL        SUSPEND
   D:00C8H         SYMBOL        T2CON
   B:0098H.3       SYMBOL        TB8
@@ -2037,11 +2039,11 @@ SYMBOL TABLE OF MODULE:  slave (FW)
   -------         ENDMOD        SUSP
 
   -------         MODULE        DELAY
+BL51 BANKED LINKER/LOCATER V6.05                                                      07/28/2020  10:41:13  PAGE 35
+
+
   C:0000H         SYMBOL        _ICE_DUMMY_
   C:0C26H         PUBLIC        _EZUSB_Delay
-BL51 BANKED LINKER/LOCATER V6.05                                                      07/25/2020  11:40:24  PAGE 35
-
-
   -------         PROC          _EZUSB_DELAY
   D:0035H         SYMBOL        ms
   C:0C26H         LINE#         39
@@ -2097,11 +2099,11 @@ SYMBOL TABLE OF MODULE:  slave (FW)
   X:E62CH         SYMBOL        ECC1B2
   X:E62DH         SYMBOL        ECC2B0
   X:E62EH         SYMBOL        ECC2B1
+BL51 BANKED LINKER/LOCATER V6.05                                                      07/28/2020  10:41:13  PAGE 36
+
+
   X:E62FH         SYMBOL        ECC2B2
   X:E628H         SYMBOL        ECCCFG
-BL51 BANKED LINKER/LOCATER V6.05                                                      07/25/2020  11:40:24  PAGE 36
-
-
   X:E629H         SYMBOL        ECCRESET
   B:00E8H.1       SYMBOL        EI2C
   D:00D8H         SYMBOL        EICON
@@ -2157,11 +2159,11 @@ SYMBOL TABLE OF MODULE:  slave (FW)
   X:E6A4H         SYMBOL        EP4CS
   X:E6ADH         SYMBOL        EP4FIFOBCH
   X:E6AEH         SYMBOL        EP4FIFOBCL
+BL51 BANKED LINKER/LOCATER V6.05                                                      07/28/2020  10:41:13  PAGE 37
+
+
   X:F400H         SYMBOL        EP4FIFOBUF
   X:E619H         SYMBOL        EP4FIFOCFG
-BL51 BANKED LINKER/LOCATER V6.05                                                      07/25/2020  11:40:24  PAGE 37
-
-
   X:E6A8H         SYMBOL        EP4FIFOFLGS
   X:E652H         SYMBOL        EP4FIFOIE
   X:E653H         SYMBOL        EP4FIFOIRQ
@@ -2217,11 +2219,11 @@ SYMBOL TABLE OF MODULE:  slave (FW)
   X:E6ECH         SYMBOL        EP8GPIFTRIG
   X:E643H         SYMBOL        EP8ISOINPKTS
   X:E65EH         SYMBOL        EPIE
+BL51 BANKED LINKER/LOCATER V6.05                                                      07/28/2020  10:41:13  PAGE 38
+
+
   X:E65FH         SYMBOL        EPIRQ
   B:00D8H.5       SYMBOL        ERESI
-BL51 BANKED LINKER/LOCATER V6.05                                                      07/25/2020  11:40:24  PAGE 38
-
-
   X:E664H         SYMBOL        ERRCNTLIM
   C:0DF4H         SYMBOL        ER_END
   B:00A8H.4       SYMBOL        ES0
@@ -2277,11 +2279,11 @@ SYMBOL TABLE OF MODULE:  slave (FW)
   X:E658H         SYMBOL        IBNIE
   X:E659H         SYMBOL        IBNIRQ
   D:00A8H         SYMBOL        IE
+BL51 BANKED LINKER/LOCATER V6.05                                                      07/28/2020  10:41:13  PAGE 39
+
+
   B:0088H.1       SYMBOL        IE0
   B:0088H.3       SYMBOL        IE1
-BL51 BANKED LINKER/LOCATER V6.05                                                      07/25/2020  11:40:24  PAGE 39
-
-
   X:E601H         SYMBOL        IFCONFIG
   X:E648H         SYMBOL        INPKTEND
   D:00A1H         SYMBOL        INT2CLR
@@ -2337,11 +2339,11 @@ SYMBOL TABLE OF MODULE:  slave (FW)
   B:00D8H.4       SYMBOL        RESI
   X:E480H         SYMBOL        RES_WAVEDATA_END
   X:E60BH         SYMBOL        REVCTL
+BL51 BANKED LINKER/LOCATER V6.05                                                      07/28/2020  10:41:13  PAGE 40
+
+
   X:E60AH         SYMBOL        REVID
   B:0098H.0       SYMBOL        RI
-BL51 BANKED LINKER/LOCATER V6.05                                                      07/25/2020  11:40:24  PAGE 40
-
-
   B:00C0H.0       SYMBOL        RI1
   B:00D0H.3       SYMBOL        RS0
   B:00D0H.4       SYMBOL        RS1
@@ -2397,11 +2399,11 @@ SYMBOL TABLE OF MODULE:  slave (FW)
   X:E65CH         SYMBOL        USBIE
   X:E65DH         SYMBOL        USBIRQ
   X:E6FAH         SYMBOL        USBTEST
+BL51 BANKED LINKER/LOCATER V6.05                                                      07/28/2020  10:41:13  PAGE 41
+
+
   X:E682H         SYMBOL        WAKEUPCS
   X:E6F0H         SYMBOL        XGPIFSGLDATH
-BL51 BANKED LINKER/LOCATER V6.05                                                      07/25/2020  11:40:24  PAGE 41
-
-
   X:E6F2H         SYMBOL        XGPIFSGLDATLNOX
   X:E6F1H         SYMBOL        XGPIFSGLDATLX
   C:0DE4H         LINE#         48
@@ -2457,11 +2459,11 @@ SYMBOL TABLE OF MODULE:  slave (FW)
   C:097CH         LINE#         123
   C:0980H         LINE#         126
   C:0984H         LINE#         128
+BL51 BANKED LINKER/LOCATER V6.05                                                      07/28/2020  10:41:13  PAGE 42
+
+
   C:0988H         LINE#         130
   C:098CH         LINE#         132
-BL51 BANKED LINKER/LOCATER V6.05                                                      07/25/2020  11:40:24  PAGE 42
-
-
   C:0990H         LINE#         134
   C:0994H         LINE#         136
   C:0998H         LINE#         138
@@ -2488,5 +2490,5 @@ SYMBOL TABLE OF MODULE:  slave (FW)
 *** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
     SEGMENT: ?PR?_LED_ON?SLAVE
 
-Program Size: data=66.7 xdata=4520 code=3395
+Program Size: data=66.7 xdata=4520 code=3423
 LINK/LOCATE RUN COMPLETE.  2 WARNING(S),  0 ERROR(S)
